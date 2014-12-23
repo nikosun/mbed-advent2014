@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Snowfall.js</title>
+<link rel="stylesheet" href="snowfall.css" />
+<style>
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background: #C9151E url(img/bg2.png) no-repeat 50% 100%;
+}
+
+</style>
+</head>
+<body>
+
+<script src="snowfall.js"></script>
+<script>
+var snow = new Snowfall();
+
+    snow.config({
+        type: "image",
+        content: ["img/flake1.png", "img/flake2.png", "img/flake3.png", "img/flake4.png", "img/flake5.png", "img/flake6.png", "img/snow-flake-mbed-5.png", "img/snow-flake-mbed-7.png"],
+        minSize: 10,
+        maxSize: 30
+    });
+
+</script>
+
+</body>
+</html>
